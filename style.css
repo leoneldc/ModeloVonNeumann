@@ -1,0 +1,224 @@
+:root {
+  --fondo-negro: rgb(0, 0, 0);
+  --fondo-blanco: rgb(255, 255, 255);
+  --letras-blancas: rgb(255, 255, 255);
+  --letras-negras: rgb(0, 0, 0);
+  --diamond: rgb(72, 219, 251);
+  --platinum: rgb(221, 221, 221);
+  --gris: #444;
+}
+:root[data-theme="dark"] {
+  --fondo-negro: rgb(255, 255, 255);
+  --fondo-blanco: rgb(0, 0, 0);
+  --letras-blancas: rgb(0, 0, 0);
+  --letras-negras: rgb(255, 255, 255);
+  --diamond: rgb(72, 219, 251);
+  --platinum: rgb(221, 221, 221);
+  --gris: #444;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Nunito, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: rgba(72, 219, 251, 0.376);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(241, 241, 241);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--fondo-negro);
+}
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: 0.3s linear;
+}
+.barra-navegacion {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+.navbar .barra-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: var(--letras-blancas);
+  font-size: 25px;
+  background-size: contain;
+  font-weight: 700;
+  padding-left: 4%;
+}
+.menu-toggler {
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+.menu-toggler span {
+  display: block;
+  height: 3px;
+  background-color: var(--fondo-blanco);
+  margin: 6px 0;
+  position: relative;
+  transition: 0.3s linear;
+}
+.lista-navegacion a {
+  color: var(--letras-blancas);
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 100px;
+  transition: 0.2s linear;
+}
+.lista-navegacion a:hover {
+  color: var(--diamond) !important;
+}
+.sticky {
+  background-color: var(--letras-blancas);
+  padding: 18px 0;
+}
+.sticky .logo {
+  color: var(--letras-negras);
+}
+.sticky .lista-navegacion a {
+  color: var(--letras-negras);
+}
+.sticky .menu-toggler span {
+  background: var(--fondo-negro);
+}
+#particpantes {
+  height: 100vh;
+  min-height: 500px;
+  background: var(--fondo-negro);
+}
+#informacion {
+  min-height: 500px;
+  background: rgb(108, 117, 125);
+}
+.titulo{
+  font-size: 40px;
+  font-weight: 600;
+  height: 120px;
+  background: rgb(233, 236, 239);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-contenedor{
+  display: flex;
+}
+.tema{
+  width: 100%;
+  padding-top: 0;
+  padding: 1rem;
+}
+.tema .titulo{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 15px;
+  background-color: rgb(206, 212, 218);
+  color: var(--letras-negras);
+  transition: all 600ms linear;
+}
+.tema .contenido{
+  background: rgb(73, 80, 87);
+  padding: 1rem;
+  font-size: 20px;
+  color: var(--letras-blancas);
+  border-left: 3px dashed var(--platinum);
+  border-right: 3px dashed var(--platinum);
+  border-bottom: 3px dashed var(--platinum);
+  border-radius: 15px;
+  transition: all 600ms linear;
+}
+.contenido .texto{
+  margin: 1.5rem;
+  overflow: hidden;
+  height: 280px;
+}
+.tema .titulo:hover{
+  background: rgb(233, 236, 239);
+  color: var(--letras-negras);
+  cursor: pointer;
+}
+.boton{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#informacion .boton a{
+  width: 80%;
+}
+input{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  border-radius: 20px;
+  background: var(--fondo-blanco);
+  cursor: pointer;
+}
+input:hover{
+  background: rgb(233, 236, 239);
+}
+@media screen and (max-width: 1050px) and (min-width: 300px) {
+  .lista-navegacion.active {
+    right: 0;
+  }
+  .menu-toggler {
+    display: block;
+  }
+  .lista-navegacion {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--gris);
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: 0.3s linear;
+  }
+  .lista-navegacion a {
+    color: var(--letras-blancas);
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+  .sticky .lista-navegacion {
+    background-color: var(--fondo-blanco);
+  }
+  .sticky .lista-navegacion a {
+    color: var(--letras-negras);
+  }
+  .menu-toggler.active span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+  .menu-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggler.active span:nth-child(3) {
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
