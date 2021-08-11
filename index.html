@@ -1,112 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,900;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Sistemas Operativos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,900;1,600&amp;display=swap"
-    rel="stylesheet" />
-  <title>Sistemas Operativos</title>
-</head>
+  <body>
+    <!----NAV---->
 
-<body>
-  <!----NAV---->
-
-  <nav class="navbar">
-    <div class="barra-navegacion">
-      <a href="#LOGO" class="logo">GRUPO 2</a>
-      <button class="menu-toggler">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="lista-navegacion">
-        <a href="">Integrantes</a>
-        <a href="#informacion">Temas</a>
-        <a href="">Modelo VN</a>
+    <nav class="navbar">
+      <div class="barra-navegacion">
+        <a href="#LOGO" class="logo">GRUPO 2</a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="lista-navegacion">
+          <a href="#participantes">Integrantes</a>
+          <a href="#informacion">Temas</a>
+          <a href="#mv">Modelo VN</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!----PORTADA---->
+    <!----PORTADA---->
 
-  <section id="participantes">
+    <section id="participantes">
       <article class="container">
         <aside class="participantes-info">
           <h2>Lilian Ortiz</h2>
-          <img src="assets/audifonos.jpg" alt="Participante">
+          <img src="assets/lilian.jpg" alt="Participante" />
         </aside>
         <aside class="participantes-info">
           <h2>Leonel Dominguez</h2>
-          <img src="assets/audifonos.jpg" alt="Participante">
+          <img src="assets/9959-19-5644.jpg" alt="Participante" />
         </aside>
         <aside class="participantes-info">
           <h2>Jefferson Dávila</h2>
-          <img src="assets/audifonos.jpg" alt="Participante">
+          <img src="assets/9959-19-14.jpg" alt="Participante" />
         </aside>
         <aside class="participantes-info">
           <h2>Luis Lee</h2>
-          <img src="assets/audifonos.jpg" alt="Participante">
+          <img src="assets/luisca.jpg" alt="Participante" />
         </aside>
       </article>
-  </section>
+    </section>
 
-  <!----INFO---->
-
-  <section id="informacion">
-    <div class="titulo">
-      <h1>Temas:</1>
-    </div>
-
-    <div class="temario">
-      <div class="tema">
-        <img src="assets/teclado.jpg" alt="teclado" class="-img">
-        <div class="contenido">
-          <h3>
-            Dispositivos de Entrada
-          </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim repellendus saepe architecto iusto quod
-            dignissimos? Et tempore unde, quasi odio sequi atque! Vero sit dolore temporibus et atque exercitationem.
-          </p>
-          <span></span>
-        </div>
+    <!----INFO---->
+    <section id="informacion">
+      <div class="titulo">
+        <h1>TEMARIO:</h1>
       </div>
 
-      <div class="tema">
-        <img src="assets/audifonos.jpg" alt="audifonos" class="-img">
-        <div class="contenido">
-          <h3>
-            Dispositivos de Salida
-          </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim repellendus saepe architecto iusto quod
-            dignissimos? Et tempore unde, quasi odio sequi atque! Vero sit dolore temporibus et atque exercitationem.
-          </p>
-          <span></span>
+      <div class="temario">
+        <div class="tema">
+          <img src="assets/teclado.jpg" alt="teclado" class="-img" />
+          <div class="contenido">
+            <h3>Unidad Aritmética Logica (ALU)</h3>
+            <p>
+              Es la encargada de realizar todas las operaciones aritmeticas como
+              sumas, multiplicaciones; tambien se encarga de las comparaciones.
+            </p>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="tema">
+          <img src="assets/audifonos.jpg" alt="audifonos" class="-img" />
+          <div class="contenido">
+            <h3>Unidad de Control (UC)</h3>
+            <p>
+              Se encarga de leer las instrucciones de los programas almacenados
+              en la memoria, luego envia las ordenes a los componentes del
+              procesador para que ejecute las instrucciones.
+            </p>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="tema">
+          <img src="assets/audifonos.jpg" alt="audifonos" class="-img" />
+          <div class="contenido">
+            <h3>Memoria Principal (RAM)</h3>
+            <p>
+              Contiene la direccion de almacenamiento de los datos y su
+              contenido, la memoria dispone de un registro de direcciones donde
+              se almacena la direccion en la que se leera un dato y un registro
+              de intercambio de memoria en donde se almacena ese dato leido.
+            </p>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="tema">
+          <img src="assets/audifonos.jpg" alt="audifonos" class="-img" />
+          <div class="contenido contenido-last-height">
+            <h3>Unidad de Entrada y Salida (E/S)</h3>
+            <p>
+              Es el que se encarga de hacer las conexiones que permiten la
+              comunicación entre los dintintos bloques del modelo de von newman.
+            </p>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="tema">
+          <img src="assets/audifonos.jpg" alt="audifonos" class="-img" />
+          <div class="contenido">
+            <h3>Perifericos</h3>
+            <p>
+              Se encargan de tomar los datos que pueden llegar de los teclados y
+              los muestra en alguna salida como lo es la pantalla.
+            </p>
+            <span></span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="tema">
-        <img src="assets/audifonos.jpg" alt="audifonos" class="-img">
-        <div class="contenido">
-          <h3>
-            Dispositivos de Salida
-          </h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            Et tempore unde, quasi odio sequi atque! Vero sit dolore temporibus et atque exercitationem.
-          </p>
-          <span></span>
-        </div>
+    <!----MODELO VON NEUMANN---->
+    <section id="mv">
+      <div class="titulo">MODELO VON NIUMANN</div>
+      <div class="mapdiv">
+        <svg
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.0"
+          width="520"
+          height="500"
+          id="svg2"
+        >
+          <defs id="defs5" />
+          <g transform="translate(59.31252,59.43743)" id="g1898">
+            <a
+              xlink:title="MEMORIA RAM"
+              xlink:href="https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
+              xlink:class="color"
+            >
+              <rect
+                width="348.75012"
+                height="58.750015"
+                x="-49.000015"
+                y="-47.750011"
+                style="
+                  opacity: 1;
+                  fill-opacity: 1;
+                  stroke: black;
+                  stroke-width: 1.25000036;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                id="rect1873"
+              />
+            </a>
+
+            <!--UNIDAD DE CONTROL-->
+          <g class="prueba">
+            <a
+              xlink:title="UNIDAD DE CONTROL"
+              xlink:href="https://hardzone.es/reportajes/que-es/unidad-control/"
+            >
+              <rect
+                width="158.75005"
+                height="158.75006"
+                x="-49.000004"
+                y="66.437469"
+                style="
+                  opacity: 1;
+                  fill-opacity: 1;
+                  stroke: black;
+                  stroke-width: 1.25000012;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                id="rect2760"
+              />
+            </a>
+            <a
+              xlink:title="UNIDAD DE CONTROL"
+              xlink:href="https://hardzone.es/reportajes/que-es/unidad-control/"
+            >
+              <switch>
+                <text
+                  x="30.668964"
+                  y="141.83398"
+                  style="
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-align: start;
+                    line-height: 100%;
+                    text-anchor: start;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 1px;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-opacity: 1;
+                    font-family: Arial;
+                  "
+                  id="text2802"
+                  xml:space="preserve"
+                >
+                  <tspan
+                    x="40.668964"
+                    y="141.83398"
+                    style="
+                      font-size: 28px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2808"
+                  >
+                    Unidad
+                  </tspan>
+                  <tspan
+                    x="42.668964"
+                    y="169.83398"
+                    style="
+                      font-size: 28px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2815"
+                  >
+                    de Control
+                  </tspan>
+                </text>
+              </switch>
+            </a>
+
+          </g>
+
+            <a xlink:title="ALU">
+              <rect
+                width="158.75005"
+                height="158.75006"
+                x="142.62497"
+                y="66.437469"
+                style="
+                  opacity: 1;
+                  fill: silver;
+                  fill-opacity: 1;
+                  stroke: black;
+                  stroke-width: 1.25000012;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                id="rect2762"
+              />
+            </a>
+
+            <rect
+              width="118.74995"
+              height="38.750008"
+              x="93.624977"
+              y="290.12515"
+              style="
+                opacity: 1;
+                fill: silver;
+                fill-opacity: 1;
+                stroke: black;
+                stroke-width: 1.25000095;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+              id="rect2764"
+            />
+
+            <rect
+              width="118.74995"
+              height="38.750008"
+              x="231.62503"
+              y="290.12515"
+              style="
+                opacity: 1;
+                fill: silver;
+                fill-opacity: 1;
+                stroke: black;
+                stroke-width: 1.25000095;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+              id="rect2768"
+            />
+
+            <a xlink:title="BUS">
+              <rect
+                width="118.74995"
+                height="38.750008"
+                x="162.62502"
+                y="176.4375"
+                style="
+                  opacity: 1;
+                  fill: white;
+                  fill-opacity: 0.77777782;
+                  stroke: black;
+                  stroke-width: 1.25000095;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                id="rect2788"
+              />
+            </a>
+
+            <!--ALU-->
+            <a
+              xlink:title="UNIDAD LOGICA ARITMÉTICA"
+              xlink:href="https://hardzone.es/reportajes/que-es/unidad-control/"
+            >
+              <switch>
+                <text
+                  x="222.15039"
+                  y="101.66309"
+                  style="
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-align: start;
+                    line-height: 100%;
+                    text-anchor: start;
+                    fill: black;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 1px;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-opacity: 1;
+                    font-family: Arial;
+                  "
+                  id="text2790"
+                  xml:space="preserve"
+                >
+                  <tspan
+                    x="235.15039"
+                    y="101.66309"
+                    style="
+                      font-size: 23px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2794"
+                  >
+                    Unidad
+                  </tspan>
+                  <tspan
+                    x="235.15039"
+                    y="129.66309"
+                    style="
+                      font-size: 23px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2798"
+                  >
+                    Aritmética
+                  </tspan>
+                  <tspan
+                    x="235.15039"
+                    y="157.66309"
+                    style="
+                      font-size: 23px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2800"
+                  >
+                    Lógica
+                  </tspan>
+                </text>
+              </switch>
+            </a>
+
+            <!--MEMORIA RAM-->
+            <a
+              xlink:title="MEMORIA RAM"
+              xlink:href="https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
+            >
+              <switch>
+                <text
+                  x="124.45903"
+                  y="-11.299809"
+                  style="
+                    font-size: 5px;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-align: start;
+                    line-height: 100%;
+                    text-anchor: start;
+                    fill: black;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 1px;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-opacity: 1;
+                    font-family: Arial;
+                  "
+                  id="text2817"
+                  xml:space="preserve"
+                >
+                  <tspan
+                    x="124.45903"
+                    y="-11.299809"
+                    style="
+                      font-size: 28px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2823"
+                  >
+                    Memoria RAM
+                  </tspan>
+                </text>
+              </switch>
+            </a>
+            <!--input-->
+            <switch>
+              <text
+                x="151.78999"
+                y="318.15363"
+                style="
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-align: start;
+                  line-height: 100%;
+                  text-anchor: start;
+                  fill: black;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 1px;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-opacity: 1;
+                  font-family: Arial;
+                "
+                id="text2830"
+                xml:space="preserve"
+              >
+                <tspan
+                  x="171.78999"
+                  y="318.15363"
+                  style="
+                    font-size: 28px;
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    text-align: center;
+                    line-height: 100%;
+                    writing-mode: lr-tb;
+                    text-anchor: middle;
+                    font-family: Arial;
+                  "
+                  id="tspan2836"
+                >
+                  Input
+                </tspan>
+              </text>
+            </switch>
+
+            <!--output-->
+            <switch>
+              <text
+                x="290.41895"
+                y="318.33136"
+                style="
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-align: start;
+                  line-height: 100%;
+                  text-anchor: start;
+                  fill: black;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 1px;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-opacity: 1;
+                  font-family: Arial;
+                "
+                id="text2843"
+                xml:space="preserve"
+              >
+                <tspan
+                  x="305.41895"
+                  y="318.33136"
+                  style="
+                    font-size: 28px;
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    text-align: center;
+                    line-height: 100%;
+                    writing-mode: lr-tb;
+                    text-anchor: middle;
+                    font-family: Arial;
+                  "
+                  id="tspan2845"
+                >
+                  Output
+                </tspan>
+              </text>
+            </switch>
+
+            <!--BUS-->
+            <a
+              xlink:title="BUS"
+              xlink:href="https://es.wikipedia.org/wiki/Bus_(inform%C3%A1tica)"
+            >
+              <switch>
+                <text
+                  x="221.89893"
+                  y="202.14941"
+                  style="
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-align: start;
+                    line-height: 100%;
+                    text-anchor: start;
+                    fill: black;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 1px;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-opacity: 1;
+                    font-family: Arial;
+                  "
+                  id="text2847"
+                  xml:space="preserve"
+                >
+                  <tspan
+                    x="241.89893"
+                    y="202.14941"
+                    style="
+                      font-size: 18px;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: normal;
+                      font-stretch: normal;
+                      text-align: center;
+                      line-height: 100%;
+                      writing-mode: lr-tb;
+                      text-anchor: middle;
+                      font-family: Arial;
+                    "
+                    id="tspan2849"
+                  >
+                    BUS
+                  </tspan>
+                </text>
+              </switch>
+            </a>
+
+            <g id="g2855">
+              <path
+                d="M -17.854446,64.802101 L -17.854446,13.53686 L -21.482164,19.820251 L -14.318912,19.820251 L -17.67767,13.360083"
+                style="
+                  fill: black;
+                  fill-opacity: 1;
+                  fill-rule: evenodd;
+                  stroke: black;
+                  stroke-width: 1px;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-opacity: 1;
+                "
+                id="path2851"
+              />
+              <use
+                transform="matrix(1,0,0,-1,89.19243,78.16218)"
+                id="use2853"
+                x="0"
+                y="0"
+                width="300"
+                height="281"
+                xlink:href="#path2851"
+              />
+            </g>
+            <use
+              transform="translate(189.8994,0)"
+              id="use2859"
+              x="0"
+              y="0"
+              width="300"
+              height="281"
+              xlink:href="#g2855"
+            />
+            <path
+              d="M 140.97097,167.54605 L 111.70573,167.54605 L 117.98912,163.91834 L 117.98912,171.08159 L 111.52895,167.72283"
+              style="
+                fill: black;
+                fill-opacity: 1;
+                fill-rule: evenodd;
+                stroke: black;
+                stroke-width: 1px;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-opacity: 1;
+              "
+              id="use2861"
+            />
+            <use
+              transform="matrix(-1,0,0,1,252.4999,-43)"
+              id="use2865"
+              x="0"
+              y="0"
+              width="300"
+              height="281"
+              xlink:href="#use2861"
+            />
+            <path
+              d="M 144.09738,287.78166 L 214.79103,217.08799 L 212.91317,224.09621 L 207.848,219.03102 L 214.79102,216.83799"
+              style="
+                fill: black;
+                fill-opacity: 1;
+                fill-rule: evenodd;
+                stroke: black;
+                stroke-width: 1.00000036px;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-opacity: 1;
+              "
+              id="path2867"
+            />
+            <use
+              transform="matrix(0,1,-1,0,511.754,72.86562)"
+              id="use2871"
+              x="0"
+              y="0"
+              width="300"
+              height="281"
+              xlink:href="#path2867"
+            />
+          </g>
+        </svg>
       </div>
-
-    </div>
-
-  </section>
-
-  <!----MODELO VON NEUMANN---->
-</body>
-
+    </section>
+  </body>
 </html>
