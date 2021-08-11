@@ -157,7 +157,6 @@ html {
   text-align: justify;
   background-color: var(--fondo-blanco);
   width: 90%;
-  height: 255px;
   border-radius: 6px;
   transform: translateY(-70px);
   padding: 2%;
@@ -166,14 +165,15 @@ html {
   height: 200px;
 }
 .contenido:last-child{
-  height: 200px;
+  height: 280px;
 }
 .contenido h3{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 22px;
-  height: 24%;
+  height: 20%;
 }
 .contenido p{
   display: flex;
@@ -201,7 +201,7 @@ html {
 #participantes{
   height: 100vh;
   background: var(--fondo-negro);
-  color:white;
+  color:var(--fondo-blanco);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,31 +234,55 @@ html {
 }
 
 
-
 #mv{
-  height: 91.5vh;
+  padding-bottom: 50px;
 }
 #mv .titulo{
   text-align: center;
   background: var(--fondo-blanco);
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
   font-weight: 700;
+  height: 15vh;
 }
 .mapdiv{
-  padding: 0 35%;
-}
-.prueba{
-  fill: black;
-}
-rect{
-  fill: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 rect:hover{
   fill: gold;
+  cursor: pointer;
 }
-tspan:hover{
-  fill: greenyellow;
+.cuadro:hover{
+  cursor: pointer;
+  fill: black;
 }
+@media screen and (max-width: 1050px) and (min-width: 651px) {
+  .tema{
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 650px){
+  .tema{
+    width: calc(100% - 10px);
+  }
+  .temario{
+    flex-direction: column;
+  }
+  .contenido p{
+    font-size: 13px;
+  }
+  .contenido-last-height{
+    height: 200px;
+  }
+  .contenido:last-child{
+    height: 235px;
+  }
+}
+
 @media screen and (max-width: 1050px) and (min-width: 300px) {
   .lista-navegacion.active {
     right: 0;
@@ -270,7 +294,7 @@ tspan:hover{
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-color: var(--gris);
+    background-color: #353b48;
     top: 0;
     right: -100%;
     max-width: 400px;
@@ -300,4 +324,41 @@ tspan:hover{
     transform: rotate(45deg);
     bottom: 14px;
   }
+  .wrapper {
+    display: flex;
+  }
+  #about .title {
+    font-size: 2rem;
+  }
 }
+@media screen and (max-width: 200px) {
+  .logo {
+    font-size: 15px;
+  }
+  .menu-toggler {
+    display: block;
+  }
+  .lista-navegacion {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: 0.3s linear;
+  }
+  .lista-navegacion a {
+    color: white;
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+  .sticky .lista-navegacion {
+    border: black solid;
+    background-color: #f1f1f1;
+  }
+}
+
+
