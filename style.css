@@ -205,6 +205,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #participantes > .container{
   display: flex;
@@ -215,12 +216,16 @@ html {
   margin-right: 2rem;
   text-align: center;
 }
+.participantes-info .carne{
+  font-size: 16px;
+}
 .participantes-info:hover h2{
   color: gold;
 }
 .participantes-info > img{
   width: 200px;
   height: 200px;
+  margin-top: 15px;
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,6 +334,17 @@ rect:hover{
   }
   #about .title {
     font-size: 2rem;
+  }
+  #participantes{
+    height: auto;
+  }
+  #participantes > .container{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+  .participantes-info{
+    margin: 1.5rem 0;
   }
 }
 @media screen and (max-width: 200px) {
