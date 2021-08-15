@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(".navbar").removeClass("sticky");
       }
     });
-  
+
     $(".menu-toggler").click(function () {
       $(this).toggleClass("active");
       $(".lista-navegacion").toggleClass("active");
