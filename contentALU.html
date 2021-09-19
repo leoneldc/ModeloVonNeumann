@@ -9,44 +9,121 @@
   <link rel="icon" type="favicon/x-icon" href="assets/robot.png">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.min.css">
-  <title>Módulos Von Neumann</title>
+  <title>MVN (ALU)</title>
 </head>
 
 <body class="container">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide position-absolute top-50 start-50 translate-middle" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="assets/1.jpg" class="d-block w-100" alt="1">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>MANEJO DE MEMORIA</h5>
-            <p>Se encarga de verificar si hay espacio en la memoria para enviar el proceso, si hay espacio se envia a la memoria RAM y si no se envia al Disco Duro.</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="assets/2.jpg" class="d-block w-100" alt="2">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Unidad de Gestión de Memoria (MMU)</h5>
-            <p>Cada vez que sea necesario, el sistema hace uso del Swap para hacer un intercambio, pasando del proceso del Disco a la Memoria Ram.</p>
-          </div>
-        </div>
-        <div class="carousel-item p-10">
-          <img src="assets/mmu.jpg" class="d-block w-100" alt="3">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide position-absolute top-50 start-50 translate-middle"
+    data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1500">
+        <img src="assets/1.jpg" class="d-block w-100" alt="1">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <h5 class="position-absolute top-50 start-50 translate-middle">Unidad Aritmética Lógica (ALU)</h5>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/2.jpg" class="d-block w-100" alt="2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>ALU</h5>
+          <p>Es un circuito que permite, como su nombre lo indica, realizar operaciones lógicas y aritméticas. Además de
+            los operadores lógicos y aritméticos, la ALU cuenta con una serie de registros para almacenar los datos, y
+            bits de información sobre los resultados, también llamados banderas.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/3.jpg" class="d-block w-100" alt="3">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <h5 class="position-absolute top-50 start-50 translate-middle">LAS BANDERAS MÁS COMUNES SON</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/4.jpg" class="d-block w-100" alt="4">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <ul class="position-absolute top-50 start-50 translate-middle" style="list-style: none; margin-left: -15px;">
+            <li>Carry</li>
+            <li>Auxiliary</li>
+            <li>Borrow</li>
+            <li>OverFlow</li>
+            <li>Parity</li>
+            <li>Zero</li>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/5.jpg" class="d-block w-100" alt="5">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <h5 class="position-absolute top-50 start-50 translate-middle">PARTES DE LA ALU</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/6.jpg" class="d-block w-100" alt="6">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <ul class="position-absolute top-50 start-50 translate-middle w-100" style="margin-left: -15px;">
+            <li>Sumador/restador rápido</li>
+            <li>Operadores lógicos (AND, OR, XOR, NOT)</li>
+            <li>Un acumulador y un registro auxiliar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/1.jpg" class="d-block w-100" alt="7">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <ul class="position-absolute top-50 start-50 translate-middle w-100" style="margin-left: -15px;">
+            <li>Un registro de salida</li>
+            <li>Señales de control que indiquen la operación a realizar</li>
+            <li>Registro de banderas de estatus</li>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/2.jpg" class="d-block w-100" alt="8">
+        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <h5 class="position-absolute top-50 start-50 translate-middle">MANEJO Y GESTIÓN DE MEMORIA</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/3.jpg" class="d-block w-100" alt="9">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>MANEJO DE MEMORIA</h5>
+          <p>Se encarga de verificar si hay espacio en la memoria para enviar el proceso, si hay espacio se envia a la
+            memoria RAM y si no se envia al Disco Duro.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/4.jpg" class="d-block w-100" alt="10">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Unidad de Gestión de Memoria (MMU)</h5>
+          <p>Cada vez que sea necesario, el sistema hace uso del Swap para hacer un intercambio, pasando del proceso del
+            Disco a la Memoria Ram.</p>
+        </div>
+      </div>
+      <div class="carousel-item p-10">
+        <img src="assets/mmu.jpg" class="d-block w-100" alt="11">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </div>
