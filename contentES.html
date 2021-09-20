@@ -1,72 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="stylecontent.css">
-    <link rel="icon" type="favicon/x-icon" href="assets/robot.png">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="stylecontent.css" />
+    <link rel="icon" type="favicon/x-icon" href="assets/robot.png" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.min.css" />
     <title>Módulos Von Neumann</title>
-</head>
+  </head>
 
-<body class="container">
-    <div id="carouselExampleDark"
-        class="carousel carousel-dark slide position-absolute top-50 start-50 translate-middle" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+  <body class="container">
+    <div
+      id="carouselExampleDark"
+      class="
+        carousel carousel-dark
+        slide
+        position-absolute
+        top-50
+        start-50
+        translate-middle
+      "
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="assets/1.jpg" class="d-block w-100" alt="1" />
+          <div
+            class="
+              carousel-caption
+              d-none d-md-block
+              position-absolute
+              top-50
+              start-50
+              translate-middle
+            "
+          >
+            <h5 class="position-absolute top-50 start-50 translate-middle">
+              Unidad de Entrada(E) / Salida(S)
+            </h5>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/1.jpg" class="d-block w-100" alt="1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>FUNCIONES DE LAS E/S</h5>
-                    <p>Control y temporización</p>
-                    <p>Comunicación con la CPU</p>
-                    <p>Comunicación con el dispositivo externo</p>
-                    <p>Almacén temporal de datos</p>
-                    <p>Detección de errores</p>
-
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/2.jpg" class="d-block w-100" alt="2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Modos de interconexión E/S ⇔ CPU</h5>
-                    <p>Buses independientes → E/S aislada</p>
-                    <p>Bus común, pero líneas de control separadas</p>
-                    <p>Bus único → E/S localizada en memoria</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/3.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Técnicas de Interacción E/S ⇔ Sistema</h5>
-                    <p>E/S controlada por programa</p>
-                    <p>E/S por interrupciones</p>
-                    <p>Acceso directo a memoria (DMA)</p>
-
-                </div>
-            </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/2.jpg" class="d-block w-100" alt="2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Conexión de periféricos y la CPU</h5>
+            <p>
+              La coordinación de la comunicación entre los periféricos y la CPU
+              la realiza la Unidad de E/S. Se observa que esta no es un
+              periférico sino un dispositivo que gestiona a los periféricos
+              siguiendo las ordenes de la CPU. La Unidad de E/S recibe de la
+              Unidad de Control información sobre el tipo de transferencia de
+              datos que debe realizar (si es de entrada o de salida) y el
+              periférico que debe de utilizar; si es de salida recibirá también
+              el dato que debe enviar y el momento de la operación.
+            </p>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/bus_.jpg" class="d-block w-100" alt="3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Conexión de periféricos y la CPU</h5>
+            <p>
+              La Unidad de E/S seleccionara el periférico y ejecutara la
+              operación teniendo en cuanta las características propias de cada
+              periférico. Una vez ejecutada la orden avisara a la UC de la
+              terminación de la transferencia. Cada periférico o parte de un
+              periférico tendrá asignado un numero o dirección que servirá para
+              identificarlo. Cuando la UC quiera seleccionarlo enviara dicho
+              número a la Unidad de E/S.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/3.jpg" class="d-block w-100" alt="4" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Técnicas de Interacción E/S ⇔ Sistema</h5>
+            <p>E/S controlada por programa</p>
+            <p>E/S por interrupciones</p>
+            <p>Acceso directo a memoria (DMA)</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/2.jpg" class="d-block w-100" alt="5" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Modos de interconexión E/S ⇔ CPU</h5>
+            <p>Buses independientes → E/S aislada</p>
+            <p>Bus común, pero líneas de control separadas</p>
+            <p>Bus único → E/S localizada en memoria</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/uc_.jpg" class="d-block w-100" alt="6" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              ¿Como la computadora accede a los perifericos en Arquitecturas
+              Antiguas?
+            </h5>
+            <p>
+              Se accede a los periféricos a través de un mecanismo separado para
+              acceder a la memoria con instrucciones especiales de E/S. Los
+              periféricos recibieron direcciones, por ejemplo, 0x80 para el
+              teclado. Simplificando mucho, hacer "en 0x80" leería un byte del
+              controlador de teclado al registro de CPU "AL"
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/bus_2.jpg" class="d-block w-100" alt="7" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              ¿Como la computadora accede a los perifericos en Arquitecturas
+              Modernas?
+            </h5>
+            <p>
+              Se accede a los periféricos de forma similar a la memoria: a
+              través de direcciones de memoria mapeadas en un bus. Es una forma
+              de abordar periféricos individuales, de los cuales la memoria
+              (RAM/DDR) es solo un tipo. Por ejemplo, puede tener 2 GB de RAM en
+              las direcciones 0x00000000..0x7fffffff. Después de eso, puede
+              tener una tarjeta gráfica en 0x80000000..0x80001fff. El
+              controlador de bus sabe qué dirección van a qué rangos de los
+              periféricos.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="assets/2.jpg" class="d-block w-100" alt="7" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Idioma con el que se habla con los perifericos
+            </h5>
+            <p>
+              El idioma con el que hablamos con los periféricos es más o menos
+              ad hoc dependiendo del dispositivo. Llegando a la conclusión que
+              los periféricos ya están mapeados en algún lugar, y mediante el
+              bus se entrelazan y dependiendo cual es el proceso se intercambian
+              bytes
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
 
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
